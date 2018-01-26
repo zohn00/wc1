@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;subset=latin-ext" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  
+  <header>
+      <div class="logo">
+      <img src="img/logo_top.png" />
+      </div>
+    <div class="content">
+          <div class="kolumna">
+              <div class="title">Register Form</div>
+              <div class="Rf">
+                      <form>
+                           <input type="text" name="RegisterFormUserName" placeholder="Username" class="username" >
+                           <input type="password" name="password" placeholder="Password" class="password" >
+                           <input type="password" name="confirmPassword" placeholder="Confirm Password" class="password" >
+                           <input type="email" name="RegisterFormlMail" placeholder="E-mail" class="mail" >
+                           <select name="nazwa">
+                                <option value="" selected disabled hidden>Location</option>                               
+                                <option value="Poland">Polska</option>
+                                <option value="Germany">Niemcy</option>
+                                <option value="Japan">Japonia</option>
+                                <option value="China">Chiny</option>
+                            </select>
+                            <label class="CB">
+                                <input type="checkbox" name="RegisterFormlCheckbox" id="ChB">  <label class="CB1" for="ChB"> <span class="znacznik1"><span class="znacznik2"></span> </span>I have read and accept the terms of use.</label></label>
+                           <input type="submit" name="RegisterFormlSubmit" value="Sign Up!" class="submit" >
+                       </form>
+              </div>
+              <div class="title">Send Email</div>
+              <div class="Sm">
+                  <form id="SendMail">
+                           <input type="text" name="SendEmailName" placeholder="Your name" class="username" >
+                           <input type="email" name="SendEmailMail" placeholder="Your Email" class="mail" >
+                           <textarea rows="15" cols="45" name="SendEmailMessage" form="SendMail" class="message" placeholder="Type your message..."></textarea>
+                           <label class="CB">
+                                <input type="checkbox" name="SendMailCheckbox" id="SMChB">  <label class="CB1" for="SMChB"> <span class="znacznik1"><span class="znacznik2"></span> </span>I have read and accept the terms of use.</label></label>
+                           <input type="submit" name="SendMailSubmit" value="Send Email" class="submit" >
+                       </form>
+                  
+              </div>
+
+
+          </div>
+              <div class="kolumna">
+                  <div class="title"> Sign In Form</div>
+                      <div class="SiF"> 
+                      <form id="SiF">
+                           <input type="text" name="SiFUserName" placeholder="Username" class="username" >
+                           <input type="password" name="SiFpassword" placeholder="Password" class="password" >
+                          <div class="DualPack">
+                              
+                                   <label class="CBshort">
+                                    <input type="checkbox" name="SiFCheckbox" id="SiMChB">  <label class="CB1" for="SiMChB"> <span class="znacznik1"><span class="znacznik2"></span> </span>Remember me</label>  
+                                   </label> 
+                               
+                                <input type="submit" name="SendInMailSubmit" value="Sign In" class="submitShort" > </div>
+                           </form>
+                       
+                      </div>
+                  <div class="title"> Recover Form</div>
+                  <div class="RecoverF">
+                      <form id="RecoverForm">
+                           <input type="email" name="RecoverFormMail" placeholder="Enter your Email" class="mail" >
+                           <input type="tel" name="RecoverFormTel" placeholder="Enter your Phone number" class="phone">
+                          <div class="DualPack">
+                              <input type="submit" name="RecoverFormSend" value="Send" class="submitShort1" > 
+                              <input type="submit" name="RecoverFormDone" value="Done" class="submitShort1" > 
+                          </div>
+                      </form>
+                  </div>
+                 <div class="title"> Subscribe Form</div>
+                  <div class="Sf">
+                      <form id="SubscribeForm">
+                           <input type="email" name="RecoverFormMail" placeholder="Enter your Email" class="mail" >
+                          <div class="DualPack">
+                              <input type="submit" name="SubscribeFormSend" value="Subscribe" class="submitShort1" > 
+                              <input type="submit" name="SubscribeFormDone" value="No, Thanks" class="submitShort2" > 
+                          </div>
+                      </form>
+                  </div>
+                  <div class="logo2">
+                     <img src="img/logo_bottom.png"/>
+                  </div>
+                  
+              </div>
+    </div>
+     
+  </header>
+</body>
+</html>
